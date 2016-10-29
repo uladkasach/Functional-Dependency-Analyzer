@@ -18,14 +18,13 @@ require_once($_SERVER["DOCUMENT_ROOT"] . "/../notpublic/config.php");
 
 
 <div class = 'flexme ' style = 'position:absolute; top:0; left:0; right:0; height:100%;'> 
-    <!-- container limiting max screen size to 1920px -->
     <div style = 'min-width:1000px; margin-left:auto; margin-right:auto; min-height:100%;'>
         <Br><Br>
-        <!-- call to action and first customer interaction -->
+        <!-- Load csv file of universal relations -->
         <?php include("input/include.php"); ?> 
     
         <Br><Br>
-        <!-- call to action and first customer interaction -->
+        <!-- Process the universal relation, determine deniable functional dependencies -->
         <?php include("process/include.php"); ?> 
     
         <Br><Br>
