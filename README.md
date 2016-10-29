@@ -1,0 +1,1 @@
+This simple web app takes a CVS file of a Universal Relation as input and displays all the functional dependencies present. Functional dependencies are presented in a matrix format. See example.jpg for an example of usage. 
