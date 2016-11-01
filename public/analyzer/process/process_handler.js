@@ -156,15 +156,15 @@ var process_handler = {
             // For this group, make sure that every value in column_index is equivalent
             var thisRowIndex = thisGroup[index];
             var thisRow = data[thisRowIndex];
-            var thisValue = thisRow[columnIndex];
+            var thisValue = thisRow[columnIndex].trim();
             if(groupValue == null){
                 groupIndex = thisRowIndex;
                 groupValue = thisValue;
                 continue;
             }
-            //console.log('group:', groupValue, 'this:', thisValue);
+            console.log('group:', groupValue, 'this:', thisValue);
             if(thisValue !== groupValue){
-               //console.log('F');
+               console.log('F');
                return groupIndex + ', ' + thisRowIndex; 
             }
             //console.log('G');
